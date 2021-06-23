@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Moosic</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+</head>
+<body id="top">
+    <header>
+        <div class="navIcon">
+            <a class="icon" onclick="displayNav()"><i class="fa fa-bars"></i></a>
+        </div>       
+            <nav id="navContainer">
+                <div class="logoContainer">
+                    <a href="#top"><img class="logoImg" src="images/logo.png" alt="Band logo"></a>
+                </div>
+                <ul class="navbar" id="links">
+                    <li class="nav-links aboutSection"><a href="#aboutSection">About</a></li>
+                    <li class="nav-links musicSection"><a href="#musicSection">Music</a></li>
+                    <li class="nav-links showsSection"><a href="#showsSection">Upcoming Shows</a></li>
+                    <li class="nav-links subscribeSection"><a href="#subscribeSection">Subscribe</a></li>
+                </ul>
+            </nav>       
+        <div class="topImg"></div>
+    </header>
+    <main>
+        <!-- intro begins -->
+        <section class="intro" id="aboutSection">
+            <div class="meetBand">
+                <h1 class="aboutTitle">Meet Moosic</h1>
+                    <p class="introText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="introText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="slideshow">
+                <img class="mySlides" src="images/slideshow/stage.jpg" alt="Picture of stage with band">
+                <img class="mySlides" src="images/slideshow/crowd.jpg" alt="Picture of large crowd">
+                <img class="mySlides" src="images/slideshow/player.jpg" alt="Picture of band member on stage">
+            </div>     
+        <!-- intro ends -->
+        </section>
+        <!-- musicContainer begins -->
+        <section class="musicContainer" id="musicSection">
+            <h1 class="musicTitle">Check out our new album</h1>
+            <div id="albumCover"></div>
+            <!-- <div class="itemBreak"></div> -->
+            <div class="playlistContainer">
+                <div class="songDisplay">
+                    <div class="songInfo">
+                        <p id="song"></p>
+                        <p id="artist"></p>
+                        <p id="album"></p>
+
+                        <div class="albumInfo">
+                            <div class="albumDuration">
+                                <p>Album length-</p><br>
+                                <p id="duration"></p>
+                            </div>
+                            <div class="albumSongs">
+                                <p>Total songs-</p><br>
+                                <p id="songs"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <audio id="audioPlayer" controls>
+                    <source id="audioSource" src=""></source>
+                    Your browser does not support the audio format.
+                </audio>
+
+                <ul class="playlist" id="list">
+                    <li><a class="song" href="#" data-value="music/Moosic-You don't really love me.mp3">&#9654; You don't really love me</a><span class="songLength"></span></li>
+
+                    <li><a class="song" href="#" data-value="music/Moosic-So done with you.mp3">&#9654; So done with you</a><span class="songLength"></span></li>
+
+                    <li><a class="song" href="#" data-value="music/Moosic-I actually still love you.mp3">&#9654; I actually still love you</a><span class="songLength"></span></li>
+
+                    <li><a class="song" href="#" data-value="music/Moosic-Call me back please.mp3">&#9654; Call me back please</a><span class="songLength"></span></li>
+
+                    <li><a class="song" href="#" data-value="music/Moosic-Bye baby bye.mp3">&#9654; Bye baby bye</a><span class="songLength"></span></li>
+
+                    <li><a class="song" href="#" data-value="music/Moosic-We-together.mp3">&#9654; We together</a><span class="songLength"></span></li>
+
+                    <li><a class="song" href="#" data-value="music/Moosic-Together Forever.mp3">&#9654; Together Forever</a><span class="songLength"></span></li>
+
+                </ul>
+            </div>
+        <!-- musicContainer ends -->
+        </section>
+        <!-- showsContainer begins-->
+        <section class="showsContainer" id="showsSection">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Upcoming Shows</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="date">06/25</td>
+                        <td class="location">Lima, OH</td>
+                        <td class="ticketBtn"><input type="button" value="TICKETS"></td>
+                    </tr>
+                    <tr>
+                        <td class="date">07/02</td>
+                        <td class="location">South Bend, IN</td>
+                        <td class="ticketBtn"><input type="button" value="TICKETS"></td>
+                    </tr>
+                    <tr>
+                        <td class="date">07/09</td>
+                        <td class="location">Tempe, AZ</td>
+                        <td class="ticketBtn"><input type="button" value="TICKETS"></td>
+                    </tr>
+                    <tr>
+                        <td class="date">07/16</td>
+                        <td class="location">Denver, CO</td>
+                        <td class="ticketBtn"><input type="button" value="TICKETS"></td>
+                    </tr>
+                    <tr>
+                        <td class="date">07/23</td>
+                        <td class="location">Santa Fe, NM</td>
+                        <td class="ticketBtn"><input type="button" value="TICKETS"></td>
+                    </tr>
+                    <tr>
+                        <td class="date">07/30</td>
+                        <td class="location">Dallas, TX</td>
+                        <td class="ticketBtn"><input type="button" value="TICKETS"></td>
+                    </tr>
+                </tbody>
+            </table>
+        <!-- showsContainer ends-->
+        </section>
+        <!-- subscribeContainer begins-->
+        <section class="subscribeContainer" id="subscribeSection">
+            <div class="formText">
+                <h2 class="formHeading">Join our mailing list!</h2>
+                <p>Sign up to receive email updates on latest tour dates and news</p>
+            </div>
+            <div class="form">
+                <form action="#" method="get">
+                    <div class="formInputs">
+                        <div class="nameForm">
+                            <label for="first">Name:</label>
+                            <input type="text" name="firstName" id="first" placeholder="First and Last"  required>
+                        </div>
+                        <div class="nameForm">
+                            <label for="email">Email:</label>
+                            <input type="email" name="emailAddress" id="email" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="48" required>
+                        </div>
+                        <div class="agreementForm">
+                            <input type="checkbox" id="agreement" name="termsAgreement" value="Yes" required>
+                            <label for="agreement">I accept the <a href="#" class="formLinks">Terms of Use</a> & <a href="#" class="formLinks">Privacy Policy</a></label>
+                        </div>
+                        <div class="submitForm">
+                            <button class="button" type="submit">Join</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="returningLink">
+                <p class="topLink"><a href="#top">Return to top of page</a></p>
+            </div>
+        <!-- subscribeContainer ends-->
+        </section>       
+    </main>   
+    <!-- footerContainer begins-->
+    <section class="footerContainer" id="footerSection">
+        <footer class="footer">
+            <div class="copyright">        
+                <p>Copyright &copy; 2021 Moosic</p>
+            </div>
+            <div class="mediaIcons">
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialMedia" src="images/social_media/facebook.png" alt="Facebook Icon" /></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img class="socialMedia" src="images/social_media/twitter.png" alt="Twitter Icon" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="socialMedia" src="images/social_media/instagram.png" alt="Instagram Icon" /></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="socialMedia" src="images/social_media/youtube.png" alt="youtube Icon" /></a>
+                <a href="https://www.spotify.com/us/" target="_blank"><img class="socialMedia" src="images/social_media/spotify.png" alt="Spotify Icon" /></a>
+                <a href="https://www.apple.com/itunes/" target="_blank"><img class="socialMedia" src="images/social_media/itunes.png" alt="itunes Icon" /></a>
+            </div>
+        <!-- footerContainer ends -->
+        </footer>
+    </section>
+    <script src="https://use.fontawesome.com/886202c289.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

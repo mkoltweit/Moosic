@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #252222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/* header */
+.topImg {
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    background-repeat: no-repeat; 
+    background-image: url("../images/band_silhouette2.jpg");
+}
+/* navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;    
+    z-index: 1;   
+    display: flex;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 15px;
+    align-items: center;
+}
+.navbar  a {
+    text-decoration: none;
+    color: white;
+}
+.logoContainer {
+    display: flex;
+}
+.logoImg {
+    /* border: none; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+    height: 55px;
+}
+.navbar li:hover {
+    background-color: rgb(163, 13, 13);
+}
+.current-tab {
+    font-weight: bold;
+    background-color: #6d0707;
+}
+/* main */
+/* intro container */
+.introText {
+    padding: 15px;
+    font-size:1.7vw;
+}
+.meetBand {
+    width: 50%;
+}
+.slideshow {
+    width: 35%;
+}
+.intro {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutTitle {
+    padding: 15px;
+    margin-top: 20px;
+}
+img.mySlides {
+    border: 5px solid #f1f3f4;
+    border-radius: 8px;
+    width: 100%;
+}
+/* musicContainer */
+.musicContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: black;
+}
+li.current-song {
+    background-color: #d80808 !important;
+}
+.playlist li:hover {
+    background-color: rgb(163, 13, 13);
+}
+a.song {   
+    text-decoration: none;
+    color: white;
+}
+.musicTitle {
+    margin-bottom: 20px;
+    margin-left: 35px;
+    flex: 0 1 100%;
+    padding-top: 40px;
+}
+#albumCover {
+    background-image: url("../images/album_cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    flex: 1;
+    margin: 30px;
+}
+.playlistContainer {
+    width: 50%;   
+    margin: 30px;  
+}
+.songDisplay {
+    display: flex;
+    color: rgb(163, 13, 13);
+    background-color: #f1f3f4;
+}
+.songInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 2%;
+}
+#song {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+#artist, #album {
+    font-size: 18px;
+    font-style: italic;
+}
+.albumInfo {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    flex-basis: 100%;
+}
+.albumDuration {
+    padding: 2px;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.albumSongs {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+audio {
+    width: 100%; 
+    background-color: #f1f3f4;
+}
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5px;
+}
+.playlist li {
+    width: 100%;
+    padding: 10px;
+    background-color: #6d0707; 
+    list-style-type: none;
+    border: 1px black solid;
+    position: relative;
+}
+.songLength {
+    color: white;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+/* showsContainer */
+.showsContainer {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; 
+}
+th, td {
+    border-bottom: #b3b3b3 1px solid;
+}
+th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 24px;
+}
+.location {
+    text-align: center;
+    padding: 25px;
+}
+.ticketBtn {
+    text-align: right;
+}
+.ticketBtn input {
+    padding: 5px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ticketBtn input:hover {
+    background-color: rgb(163, 13, 13);
+    color: white;
+}
+/* subscribeContainer */
+.subscribeContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.formText {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.formHeading, .formText p {
+    margin: 15px;
+}
+.formHeading { 
+    color: rgb(206, 26, 26);
+}
+.form {
+    font-size: 20px;
+    width:50%;
+}
+.formInputs {
+    text-align: center;
+}
+.form .nameForm input {
+    width:80%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom:10px;
+}
+.form label {
+    width:20%;
+}
+.agreementForm {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.formLinks {
+    text-decoration: none;
+    color: rgb(206, 26, 26);
+}
+.button {
+    padding: 5px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(163, 13, 13);
+    color: white;
+}
+.returningLink {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.toplink {
+    margin-bottom:15px;
+}
+.topLink a {
+    text-decoration: none;
+    color:rgb(206, 26, 26);
+}
+/* footer */
+.footerContainer {
+    background-image: url(../images/gray_background.jpg);
+    height: 100px;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.copyright, .mediaIcons {
+    width: 100%;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.copyright {
+    padding: 15px;
+}
+.mediaIcons a {
+    padding-right: 5px;
+}
+/* responsive design */
+/*Mobile*/
+@media all and (max-width: 480px) {
+    .navbar {
+        display: none;
+    }
+    .navIcon {
+        color: white;
+        position: relative;
+    }
+    .nav-links a {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icon {
+        position: fixed;
+        font-size:30px;
+        right: 10px;
+        top: 10px;
+        z-index: 2;
+    }
+    .intro {      
+        flex-flow: row wrap;
+        display: 90%;
+    }
+    .introText {
+        font-size:20px;
+    }
+    .slideshow {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .musicContainer {
+        width: 90%;      
+        margin-left: auto;
+        margin-right: auto;       
+        width: 100%;
+        display: flex;
+    } 
+    .playlistContainer {
+        width: 100%;
+    }
+    .meetBand {
+        width: 100%;
+    }
+    .slideshow {
+        width: 100%;
+        margin:10px;
+    }
+    #albumCover {
+        height: 400px;
+        width: 100%;
+        background-position: center;
+    }
+    table {
+        width: 90%;
+    }
+    .form {
+        width: 90%;
+    }
+}
+/* Tablet */
+@media all and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .navIcon {
+        color: white;
+        position: relative;
+    }
+    .nav-links a {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icon {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 2;
+    }
+    .topImg {
+        height: 476px;
+    }
+    .navIcon {
+        font-size: 2.5rem;
+    }
+    .intro {      
+        flex-flow: row wrap;
+        width:90%;
+    }
+    .introText {
+        font-size:20px;
+    }
+    .musicContainer {
+        width: 100%;
+        display: flex;
+    }
+    #albumCover {
+        height: 400px;
+    }
+    .playlistContainer {
+        width:100%;
+    }
+    img.mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .meetBand {
+        width: 100%;
+    }
+    table {
+        width: 90%;
+    }
+    .slideshow {
+        width: 100%;
+    }
+    .form {
+        width: 90%;
+    }
+}
+/* Desktop */
+@media all and (min-width: 769px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+    .topImg {
+        height: 696px;
+    }
+    .navIcon {
+        display: none !important;
+    }
+    .slideshow {
+        margin: 50px;
+    }
+    .intro {      
+        display: 100%;
+    }
+}
